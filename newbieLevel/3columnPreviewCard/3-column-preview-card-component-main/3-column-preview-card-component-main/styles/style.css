@@ -1,0 +1,149 @@
+html {
+    font-size: 62.5%;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    background: hsl(0, 0%, 95%);
+}
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+body, main, .threeCol {
+    display: flex;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.threeCol {
+    flex-direction: column;
+    width: 375px;
+    margin-top: 20px;
+}
+
+.headings {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+}
+
+.sedans, .suvs, .luxury {
+    padding: 4rem;
+}
+
+.sedans {
+    background: hsl(31, 77%, 52%);
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.suvs {
+    background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+    padding-right: 6rem;
+    line-height: 2.5rem;
+}
+
+.learnMore {
+    border: .2em solid hsl(0, 0%, 95%);
+    width: 15rem;
+    padding: 1.1rem 2rem;
+    border-radius: 50rem;
+    background: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    margin-top: 2rem;
+}
+
+.learnMore:hover {
+    border: .2em solid hsl(0, 0%, 95%);
+    background: hsla(0, 0%, 100%, 0);
+    color: hsl(0, 0%, 95%);
+}
+
+.sedBtn {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvBtn {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxBtn {
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: #000;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (min-width: 800px) {
+    body {
+        flex-direction: row;
+        /* justify-content: center; */
+        /* align-items: center; */
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    main {
+        flex-direction: column;
+        align-items: center;
+        width: 1125px;
+    }
+    .threeCol {
+        width: 900px;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .sedans {
+        width: 300px;
+        border-radius: 1.5rem 0 0 1.5rem;
+    }
+
+    .suvs {
+        width: 300px;
+    }
+
+    .luxury {
+        width: 300px;
+        border-radius: 0 1.5rem 1.5rem 0;
+    }
+
+    p {
+        padding-right: 2rem;
+    }
+
+    .learnMore {
+        margin-top: 4rem;
+    }
+}

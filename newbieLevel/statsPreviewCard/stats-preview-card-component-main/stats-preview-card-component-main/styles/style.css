@@ -1,0 +1,172 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+body, main, .info, .comNumbers {
+    display: flex;
+}
+
+body {
+    background: hsl(233, 47%, 7%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+
+.card {
+    width: 540px;
+    height: 446px;
+    background: hsl(244, 38%, 16%);
+    border-radius: 20px 0 0 20px;
+}
+
+.card {
+    height: 446px;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+}
+
+.insights {
+    color: hsl(277, 64%, 61%);
+}
+
+p {
+    font-size: 15px;
+    padding: 0 30px 40px 0;
+    line-height: 1.7;
+}
+
+.info {
+    flex-direction: column;
+    padding: 40px 80px 40px 40px;
+}
+
+.comNumbers {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+.numbers {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.overlay {
+    height: 446px;
+    width: 540px;
+}
+
+aside {
+    width: 540px;
+    height: 446px;
+    border-radius: 0 20px 20px 0;
+    background:
+        linear-gradient(
+            hsla(277, 64%, 61%, .5),
+            hsla(277, 64%, 61%, .5)
+        ),
+        url("../images/image-header-desktop.jpg");
+    overflow: hidden;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 601px) {
+    .mobileImage {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .card {
+        max-width: 375px;
+        height: 600px;
+        border-radius: 0 0 20px 20px;
+    }
+    
+    .info {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+    }
+
+    h1 {
+        margin: 5px 0;
+    }
+
+    p {
+        padding: 0;
+    }
+
+    .comNumbers {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .comNumbers li {
+        font-size: 12px;
+    }
+
+    ul .numbers {
+        font-size: 25px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .mobileImage {
+        background:
+        linear-gradient(
+            hsla(277, 64%, 61%, .5),
+            hsla(277, 64%, 61%, .5)
+        ),
+        url("../images/image-header-desktop.jpg");
+        background-size: cover;
+        overflow: hidden;
+        border-radius: 20px 20px 0 0;
+        display: block;
+        height: 300px;
+        margin-top: 20px;
+    }
+}

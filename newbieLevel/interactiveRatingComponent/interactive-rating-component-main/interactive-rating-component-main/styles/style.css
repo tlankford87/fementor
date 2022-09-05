@@ -1,0 +1,182 @@
+
+body, .rating, li, .btn, .thankYou {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: hsl(0, 0%, 0%);
+    justify-content: center;
+    align-items: center;
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+}
+
+main {
+    width: 450px;
+    height: 450px;
+    background:hsl(213, 19%, 18%);
+    border-radius: 30px;
+    margin: 0;
+}
+
+.rateUs {
+    margin: 50px;
+}
+
+.star {
+    padding: 18px;
+    height: 20px;
+    width: 20px;
+    background: hsl(209, 21%, 23%);
+    border-radius: 50%;
+}
+
+h1 {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+p {
+    font-size: 15px;
+    padding: 10px 0 20px 0;
+    margin: 0;
+}
+
+.rating {
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.rating li {
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: hsl(209, 21%, 23%);
+}
+
+.rating li:hover {
+    cursor: pointer;
+}
+
+.btn {
+    height: 45px;
+    width: 100%;
+    background: hsl(25, 97%, 53%);
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    padding-top: 10px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+.thankYou {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.thankYou img {
+    padding-bottom: 30px;
+}
+
+.choice {
+    color: hsl(25, 97%, 53%);
+    background: hsl(209, 21%, 23%);
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 20px;
+}
+
+.thankYou h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.weAppreciateYou {
+    text-align: center;
+    padding: 0 25px;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 350px;
+        height: 350px;
+        border-radius: 30px;
+        margin: 0;
+    }
+
+    .rateUs {
+        margin: 20px;
+    }
+
+    .star {
+        padding: 12px;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 2rem;
+        margin: 10px 0 0 0;
+        padding: 0;
+    }
+
+    .rating li {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;        
+    }
+
+    p {
+        font-size: 15px;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+
+    .thankYou {
+        margin: 20px;
+    }
+
+    .thankYou img {
+        max-height: 80px;
+        padding-bottom: 30px;
+    }
+}

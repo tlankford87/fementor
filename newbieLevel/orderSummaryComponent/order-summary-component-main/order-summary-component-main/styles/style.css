@@ -1,0 +1,161 @@
+html {
+    font-size: 62.5%;
+}
+
+body, main, summary, .btn, .plan, .annual, .cost {
+    display: flex;
+}
+
+body {
+    background: hsl(225, 100%, 94%);
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(224, 23%, 55%);
+}
+
+
+/* font-family: 'Red Hat Display', sans-serif; */
+
+
+main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    text-align: center;
+    background: hsl(0, 0%, 100%);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.image img {
+    border-radius: 20px 20px 0 0;
+    width: 400px;
+}
+
+.summary {
+    padding: 0 3.5rem;
+}
+
+h1 {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.annual {
+    background: hsl(225, 100%, 98%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.musicLogo {
+    width: 3.3rem;
+    height: 3.3rem;
+    padding-right: 1.5rem;
+}
+
+.cost {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.plan {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h4 {
+    margin: 0;
+    color: hsl(223, 47%, 23%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: .2rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-top: .2rem;
+}
+
+.annual a {
+    font-weight: 900;
+    color: hsl(245, 75%, 52%);
+}
+
+.annual a:hover {
+    color: hsl(251, 100%, 78%);
+}
+
+.btn {
+    flex-direction: column;
+}
+
+.proceed {
+    color: hsl(0, 0%, 100%);
+    background: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 1rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    filter: drop-shadow(0 1rem .3rem hsla(225, 100%, 94%, 1));
+    cursor: pointer;
+}
+
+.proceed:hover {
+    background:  hsl(251, 100%, 78%);
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    background: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 1rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+ .cancel:hover {
+    color: hsl(223, 47%, 23%);
+ }
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 1rem ;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

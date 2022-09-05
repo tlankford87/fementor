@@ -1,0 +1,78 @@
+body, main, .profileCard, .name {
+    display: flex;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/bg-pattern-bottom.svg);
+    background: url(../images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    background: url(../images/bg-pattern-card.svg);
+    background-repeat: repeat-x;
+    border-radius: 1rem;
+    width: 400px;
+}
+
+.profileCard {
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    border-radius: 50px;
+    border: 5px solid #fff;
+}
+
+.name {
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
