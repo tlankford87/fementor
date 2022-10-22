@@ -1,0 +1,139 @@
+html{
+    font-size: 62.5%;
+}
+
+body, main, #cardFront, #nameExp, #cardBack, #cards, #input, #expDateCvc{
+    display: flex;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 30vw 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+}
+
+main{
+    flex-basis: 60%;
+}
+
+#cards{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+    height: 60vh;
+    width: 50vw;
+}
+
+#cardFront{
+    color: hsl(0, 0%, 100%);
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-start;
+    height: 245px;
+    width: 447px;
+    background: url(../images/bg-card-front.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#cardFront span{
+    padding: 2rem;
+}
+
+#cardNumber{
+    letter-spacing: 1rem;
+}
+
+#nameExp{
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+#cardBack{
+    justify-self: flex-end;
+    align-items: center;
+    justify-content: flex-end;
+    background: url(../images/bg-card-back.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 245px;
+    width: 447px;
+    color: hsl(0, 0%, 100%);
+
+}
+
+#cardCVC{
+    margin-right: 5rem;
+    font-size: 1.2rem;
+    margin-bottom: .3rem;
+}
+
+#input{
+    width: 50%;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#forms{
+    width: 300px;
+}
+
+label{
+    font-size: 1.2rem;
+    color: hsl(278, 68%, 11%);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#chName, #cNumber{
+    width: 100%;
+}
+
+#cvc{
+    width: 100%;
+}
+
+input{
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 3px;
+    padding: .7rem;
+    margin-top: .2rem;
+    margin-bottom: 1rem;
+}
+
+input::placeholder{
+    color: hsl(270, 3%, 87%);
+}
+
+#expMonth, #expYear{
+    width: 4rem;
+}
+
+#expDate{
+    flex: 1;
+}
+
+#cvcNum{
+    flex: 1;
+}
+
+
+
+button{
+    width: 316px;
+    color: hsl(0, 0%, 100%);
+    background:hsl(278, 68%, 11%);
+    height: 3rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
