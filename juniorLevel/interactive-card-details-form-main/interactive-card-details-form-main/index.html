@@ -12,10 +12,10 @@
   <title>Frontend Mentor | Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
   <main>
@@ -35,10 +35,10 @@
     <section id="input">
       <section id="forms">
         <label for="chName">Cardholder Name</label>
-        <input type="text" id="chName" placeholder="e.g. Jane Appleseed">
+        <input type="text" onkeydown="" id="chName" placeholder="e.g. Jane Appleseed">
 
         <label for="cNumber">Card Number</label>
-        <input type="text" id="cNumber" placeholder="e.g. 1234 5678 9123 0000">
+        <input type="text" onkeydown="changeNumber()" id="cNumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" minlength="16">
 
         <div id="expDateCvc">
           <div id="expDate">
@@ -64,5 +64,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src="js/main.js"></script>
 </body>
 </html>
