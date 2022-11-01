@@ -35,20 +35,20 @@
     <section id="input">
       <section id="forms">
         <label for="chName">Cardholder Name</label>
-        <input type="text" onkeydown="" id="chName" placeholder="e.g. Jane Appleseed">
+        <input type="text" onkeyup="changeCardName()" id="chName" placeholder="e.g. Jane Appleseed">
 
         <label for="cNumber">Card Number</label>
-        <input type="text" id="cNumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" minlength="16">
+        <input type="number" onkeyup="changeCardNum()" id="cNumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" minlength="16">
 
         <div id="expDateCvc">
           <div id="expDate">
             <label for="expDate">Exp. Date (mm/yy)</label>
-            <input type="text" id="expMonth" placeholder="MM">
-            <input type="text" id="expYear" placeholder="YY">
+            <input type="text" onkeyup="changeCardExp()" id="expMonth" placeholder="MM">
+            <input type="text" onkeyup="changeCardExp()" id="expYear" placeholder="YY">
           </div>
           <div id="cvcNum">
             <label for="cvc">CVC</label>
-            <input type="text" id="cvc" placeholder="e.g. 123">
+            <input type="text" onkeyup="changeCardCVC()" id="cvc" placeholder="e.g. 123">
           </div>
         </div>
         <button id="confirm">Confirm</button>

@@ -1,9 +1,9 @@
-document.querySelector('#confirm').addEventListener('click', changeCard)
+// document.querySelector('#confirm').addEventListener('click', changeCard)
 
 
 
 
-function changeCard(){
+function changeCardNum(){
     //cc number
     const cardNumber = document.getElementById('cardNumber')
     const cNumber = document.getElementById('cNumber').value
@@ -12,12 +12,19 @@ function changeCard(){
     
     cardNumber.textContent = cNumValue
 
+}
+
+
+function changeCardName(){
     //customer name
     const name = document.getElementById('name')
     const chName = document.getElementById('chName')
 
     name.textContent = chName.value
 
+}
+
+function changeCardExp(){
     //exp date
     const experation = document.getElementById('experation')
     const month = document.getElementById('expMonth')
@@ -25,6 +32,10 @@ function changeCard(){
 
     experation.textContent = `${month.value}/${year.value}`
     
+}
+
+function changeCardCVC(){
+
     //cvc
     const cardCVC = document.getElementById('cardCVC')
     const cvc = document.getElementById('cvc')
