@@ -44,15 +44,16 @@ main{
     background-repeat: no-repeat;
 }
 
+svg{
+    justify-self: flex-start;
+    padding: 2rem 3rem 4rem 3rem;
+}
+
 #cardFront span{
     padding: 2rem;
 }
 
 #cardNumber{
-    letter-spacing: 1rem;
-}
-
-#cardNumber:after{
     letter-spacing: 1rem;
 }
 
@@ -81,7 +82,7 @@ main{
 }
 
 #input{
-    width: 50%;
+    width: 100%;
     flex-direction: column;
     flex: 1;
     justify-content: center;
@@ -91,6 +92,8 @@ main{
 #forms{
     width: 300px;
 }
+
+
 
 label{
     font-size: 1.2rem;
@@ -107,12 +110,22 @@ label{
     width: 100%;
 }
 
+.inputs{
+    margin-bottom: 10px;
+}
+
 input{
+    height: 2.5rem;
+    border: none;
     border: 1px solid hsl(270, 3%, 87%);
-    border-radius: 3px;
+    border-radius: 8px;
     padding: .7rem;
-    margin-top: .2rem;
-    margin-bottom: 1rem;
+    inset: none;
+}
+
+input:active{
+    inset: none;
+    border: 1px solid hsl(278, 68%, 11%);
 }
 
 input::placeholder{
@@ -120,17 +133,29 @@ input::placeholder{
 }
 
 #expMonth, #expYear{
-    width: 4rem;
+    width: 5rem;
 }
 
 #expDate{
     flex: 1;
+    flex-wrap: nowrap;
 }
+
+
 
 #cvcNum{
     flex: 1;
 }
 
+.warning{
+    font-size: 1rem;
+    color: hsl(0, 100%, 66%);
+    font-weight: 500;
+}
+
+.hidden{
+    display: none;
+}
 
 
 button{

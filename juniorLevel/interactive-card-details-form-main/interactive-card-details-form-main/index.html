@@ -21,6 +21,7 @@
   <main>
     <section id="cards">
       <section id="cardFront" class="front">
+        <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
         <span id="cardNumber">0000 0000 0000 0000</span>
         <section id="nameExp">
           <span id="name">Jane Appleseed</span>
@@ -34,21 +35,26 @@
 
     <section id="input">
       <section id="forms">
-        <label for="chName">Cardholder Name</label>
-        <input type="text" onkeyup="changeCardName()" id="chName" placeholder="e.g. Jane Appleseed">
-
-        <label for="cNumber">Card Number</label>
-        <input type="number" onkeyup="changeCardNum()" id="cNumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" minlength="16">
-
-        <div id="expDateCvc">
+        <div class="inputs">
+          <label for="chName">Cardholder Name</label>
+          <input type="text" onkeyup="changeCardName()" id="chName" placeholder="e.g. Jane Appleseed">
+        </div>
+        <div class="inputs">
+          <label for="cNumber">Card Number</label>
+          <input type="text" onkeyup="changeCardNum()" id="cNumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" minlength="16">
+          <span class="warning hidden" id="ccNumWarn">Wrong format, numbers only</span>
+        </div>
+        <div class="inputs" id="expDateCvc">
           <div id="expDate">
             <label for="expDate">Exp. Date (mm/yy)</label>
             <input type="text" onkeyup="changeCardExp()" id="expMonth" placeholder="MM">
             <input type="text" onkeyup="changeCardExp()" id="expYear" placeholder="YY">
+            <span class="warning hidden" id="expWarn">Can't be blank</span>
           </div>
           <div id="cvcNum">
             <label for="cvc">CVC</label>
             <input type="text" onkeyup="changeCardCVC()" id="cvc" placeholder="e.g. 123">
+            <span class="warning hidden" id="cvcWarn">Can't be blank</span>
           </div>
         </div>
         <button id="confirm">Confirm</button>

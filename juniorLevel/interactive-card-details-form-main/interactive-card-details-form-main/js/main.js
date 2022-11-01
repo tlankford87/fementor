@@ -7,9 +7,12 @@ function changeCardNum(){
     //cc number
     const cardNumber = document.getElementById('cardNumber')
     const cNumber = document.getElementById('cNumber').value
+    const ccNumWarn = document.getElementById('ccNumWarn')
     let cNumberSpaced = cNumber.match(/.{1,4}/g)
     let cNumValue = cNumberSpaced.join(' ')
-    
+    if(!cNumValue.match(/^[0-9 ]+$/)){
+        ccNumWarn.classList.toggle('hidden')
+    }
     cardNumber.textContent = cNumValue
 
 }
