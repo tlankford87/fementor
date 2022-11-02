@@ -1,4 +1,4 @@
-// document.querySelector('#confirm').addEventListener('click', changeCard)
+// document.querySelector('#confirm').addEventListener('click', confirmCard)
 
 
 
@@ -8,11 +8,22 @@ function changeCardNum(){
     const cardNumber = document.getElementById('cardNumber')
     const cNumber = document.getElementById('cNumber').value
     const ccNumWarn = document.getElementById('ccNumWarn')
+    const cNumberInput = document.getElementById('cNumber')
     let cNumberSpaced = cNumber.match(/.{1,4}/g)
-    let cNumValue = cNumberSpaced.join(' ')
-    if(!cNumValue.match(/^[0-9 ]+$/)){
-        ccNumWarn.classList.toggle('hidden')
+    let cNumValue
+    
+    if(cNumber.length < 1){
+        cNumValue = ''
+    }else{
+        cNumValue = cNumberSpaced.join(' ')
+        if(!cNumValue.match(/^[0-9 ]+$/)){
+            ccNumWarn.classList.remove('hidden')
+            // cNumberInput.style.border = '1px solid hsl(0, 100%, 66%)'
+        }else{
+            ccNumWarn.classList.add('hidden')
+        }
     }
+    
     cardNumber.textContent = cNumValue
 
 }
@@ -21,9 +32,9 @@ function changeCardNum(){
 function changeCardName(){
     //customer name
     const name = document.getElementById('name')
-    const chName = document.getElementById('chName')
+    const chName = document.getElementById('chName').value
 
-    name.textContent = chName.value
+    name.textContent = chName.toUpperCase()
 
 }
 
